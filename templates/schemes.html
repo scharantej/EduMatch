@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Education Schemes</title>
+</head>
+<body>
+<h1>Education Schemes</h1>
+{% if schemes %}
+<ul>
+{% for scheme in schemes %}
+<li>{{ scheme.name }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No schemes available for your income level.</p>
+{% endif %}
+</body>
+</html>
+
+
