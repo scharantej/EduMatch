@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Education Scheme Details</title>
+</head>
+<body>
+<h1>Education Scheme Details</h1>
+{% if scheme %}
+<p>Name: {{ scheme.name }}</p>
+<p>Description: {{ scheme.description }}</p>
+<p>Eligibility Criteria: {{ scheme.eligibility_criteria }}</p>
+<p>Benefits: {{ scheme.benefits }}</p>
+{% else %}
+<p>No scheme details available.</p>
+{% endif %}
+</body>
+</html>
+
